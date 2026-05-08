@@ -1,0 +1,220 @@
+@import "tailwindcss";
+
+@theme {
+
+  --color-dark: #050505;
+  --color-surface: #0C0C0C;
+  --color-accent: #22C55E;
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+  --font-heading: "Plus Jakarta Sans", sans-serif;
+
+  --animate-subtle-glow: glow 4s ease-in-out infinite;
+}
+
+@layer base {
+  body {
+    @apply bg-dark text-white antialiased selection:bg-accent selection:text-black;
+    font-feature-settings: "cv11", "ss01";
+  }
+  /* Prevent scrolling when menu is open */
+  body.menu-open {
+    @apply overflow-hidden;
+  }
+
+  .bg-premium-dark {
+    background-color: #050505;
+    background-image: 
+      radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.03) 1px, transparent 0);
+    background-size: 32px 32px;
+  }
+}
+
+@layer components {
+    /* Glassmorphism Header */
+  .glass-header {
+    @apply bg-surface/70 backdrop-blur-xl border border-border-subtle;
+  }
+
+  .nav-link {
+    @apply text-[10px] uppercase tracking-[0.2em] font-medium text-gray-500 hover:text-accent transition-all duration-300;
+  }
+
+  .btn-premium {
+    @apply px-5 py-2 bg-accent text-black text-xs font-bold uppercase tracking-tighter rounded-full 
+           hover:bg-white transition-all duration-500 hover:scale-105 active:scale-95;
+  }
+
+  /* Mobile Menu */
+  .mobile-menu-overlay {
+    @apply fixed inset-0 z-40 bg-dark/95 backdrop-blur-2xl transition-all duration-500 ease-in-out;
+    clip-path: circle(0% at calc(100% - 2rem) 3rem); 
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .mobile-menu-overlay.active {
+    @apply opacity-100;
+    visibility: visible;
+    clip-path: circle(150% at calc(100% - 2rem) 3rem);
+  }
+
+  .nav-link-mobile {
+    @apply text-3xl font-heading font-bold tracking-tighter text-gray-500 hover:text-accent transition-colors;
+  }
+
+  /* Hamburger Animation */
+  .hamburger-line {
+    @apply h-0.5 w-6 bg-white transition-all duration-300;
+  }
+  
+  .is-active .line-1 { @apply rotate-45 translate-y-1.5; }
+  .is-active .line-2 { @apply opacity-0; }
+  .is-active .line-3 { @apply -rotate-45 -translate-y-1.5; }
+
+  /* Hero Section */
+  .hero-glow {
+    @apply absolute -z-10 w-[500px] h-[500px] bg-accent/10 blur-[120px] rounded-full;
+  }
+
+  .stat-card {
+    @apply flex flex-col gap-1 p-6 rounded-2xl border-white/5;
+  }
+
+  .badge-outline {
+    @apply px-3 py-1 rounded-full border border-accent/30 text-accent text-[10px] font-bold uppercase tracking-widest bg-accent/5;
+  }
+
+  /* Project Cards */
+  .project-card {
+    @apply relative overflow-hidden rounded-3xl border border-white/5 bg-surface/30 backdrop-blur-md transition-all duration-500;
+  }
+
+  .project-card:hover {
+    @apply border-accent/20 bg-surface/50 -translate-y-2;
+  }
+
+  .tech-pill {
+    @apply px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] text-gray-400 font-medium uppercase tracking-wider;
+  }
+
+  .project-image {
+    @apply w-full aspect-video object-cover transition-transform duration-700;
+  }
+
+  .project-card:hover .project-image {
+    @apply scale-105;
+  }
+
+  /* Philosophy Section */
+  .philosophy-card {
+    @apply p-8 rounded-3xl border border-white/5 bg-surface/20 transition-all duration-500 relative overflow-hidden;
+  }
+
+  .philosophy-card:hover {
+    @apply border-accent/30 bg-surface/40;
+  }
+
+  .icon-box {
+    @apply w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-6 border border-accent/20;
+  }
+
+  .text-gradient-gray {
+    @apply bg-gradient-to-b from-white to-gray-500 bg-clip-text text-transparent;
+  }
+
+  /* Solutions & Services */
+  .engagement-card {
+    @apply p-10 rounded-[2.5rem] border border-white/5 bg-surface/30 backdrop-blur-xl transition-all duration-500 flex flex-col justify-between h-full;
+  }
+
+  .engagement-card:hover {
+    @apply border-accent/40 shadow-[0_0_40px_-15px_rgba(34,185,94,0.15)];
+  }
+
+  .service-dot {
+    @apply w-1.5 h-1.5 rounded-full bg-accent mr-3;
+  }
+
+  .text-number {
+    @apply font-heading text-4xl font-black text-white/5 absolute top-8 right-10;
+  }
+
+  /* Social proof */
+  .testimonial-card {
+    @apply w-[350px] md:w-[550px] shrink-0 p-3;
+  }
+
+  .testimonial-slider-container {
+    @apply flex gap-8 py-10;
+    width: max-content; /* Critical for GSAP marquee */
+  }
+
+  .quote-mark {
+    @apply font-heading text-8xl text-accent/10 absolute -top-4 -left-2 select-none;
+  }
+  
+  .impact-label {
+    @apply px-3 py-1 rounded-md bg-accent/10 text-accent text-[9px] font-bold uppercase tracking-widest border border-accent/20;
+  }
+
+  /* Partner section */
+  .partner-logo-container {
+    @apply flex items-center justify-center p-6 grayscale transition-all duration-500 border border-white/5 bg-surface/20 rounded-2xl hover:bg-surface/40 hover:border-accent/30 hover:grayscale-0 group;
+    height: 100px; /* Fixed height ensures all boxes are identical */
+  }
+
+  .partner-logo {
+    @apply max-h-[40px] max-w-[120px] object-contain transition-all duration-500 opacity-30 group-hover:opacity-100;
+    /* This filter makes any colored logo look like a white silhouette */
+    filter: brightness(0) invert(1); 
+  }
+
+  .partner-logo-container:hover .partner-logo {
+    /* If you want the original brand color on hover, remove the filter below */
+    filter: none; 
+    @apply scale-110;
+  }
+
+  /* CTA */
+  .cta-terminal {
+    @apply relative overflow-hidden rounded-3xl border border-white/5 bg-surface/40 p-1 lg:p-1 transition-all duration-700;
+    background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, transparent 100%);
+  }
+
+  .cta-inner {
+    @apply bg-dark/80 rounded-[1.4rem] p-12 lg:p-24 relative overflow-hidden border border-white/5;
+  }
+
+  /* Scanline effect for that high-fidelity look */
+  .scanline {
+    @apply absolute inset-0 pointer-events-none opacity-[0.03] z-20;
+    background: linear-gradient(to bottom, transparent 50%, #fff 50%);
+    background-size: 100% 4px;
+    animation: scan 10s linear infinite;
+  }
+
+  @keyframes scan {
+    from { background-position: 0 0; }
+    to { background-position: 0 100%; }
+  }
+
+  /* Footer */
+  .footer-divider {
+    @apply w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent my-12;
+  }
+
+  .footer-link {
+    @apply text-[10px] uppercase tracking-[0.2em] text-gray-500 hover:text-accent transition-all duration-300 font-bold;
+  }
+
+  .footer-brand-text {
+    @apply font-heading text-[clamp(2rem,10vw,8rem)] font-black leading-[0.8] tracking-tighter text-white/[0.03] absolute bottom-0 left-0 w-full text-center pointer-events-none select-none;
+  }
+}
+
+@keyframes glow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}

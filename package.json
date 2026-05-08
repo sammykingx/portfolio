@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-website",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.4",
+    "tailwindcss": "^4.2.4"
+  },
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i src/css/input.css -o src/css/styles.css --minify",
+    "watch:css": "npx @tailwindcss/cli -i src/css/input.css -o src/css/styles.css --watch",
+    "build": "npm run build:css",
+    "dev": "npm run watch:css"
+  }
+}
