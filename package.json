@@ -9,5 +9,8 @@
     "watch:css": "npx @tailwindcss/cli -i src/css/input.css -o src/css/styles.css --watch",
     "build": "npm run build:css",
     "dev": "npm run watch:css"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19"
   }
 }

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- ═════════════════════════════════════════
+			CORE SEO
+			═══════════════════════════════════════════ -->
+		<meta name="description" content="Senior Software Engineer and Product Builder focused on scalable SaaS systems, marketplace infrastructure, booking platforms, and execution-focused digital products.">
+		<meta name="keywords" content="Sammy Kingx, Senior Software Engineer, Product Builder, SaaS Developer, Engineering Lead, Backend Engineer, Marketplace Platforms, Booking Systems, CTO Consulting, Scalable SaaS, Software Engineer Nigeria, Product Engineer, Iyebhora Samuel, Divgm Agency, Japaconsults, Deewon, Oludayo Sokunbi, Wakawaka doctore">
+		<meta name="author" content="Sammy Kingx">
+		<meta name="robots" content="index, follow">
+		<meta name="googlebot" content="index, follow">
+		<!-- ══════════════════════════════════════════
+			OPEN GRAPH — Facebook, LinkedIn, WhatsApp
+			═══════════════════════════════════════════ --->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://sammykingx.com.ng">
+		<meta property="og:site_name" content="Meet Sammy Kingx">
+		<meta property="og:title" content="Sammy Kingx | Senior Software Engineer & Product Builder">
+		<meta property="og:description" content="Building scalable SaaS systems, marketplace infrastructure, and business-focused digital products engineered for execution and growth.">
+		<meta property="og:url" content="https://www.sammykingx.com.ng">
+		<meta property="og:image" content="https://www.sammykingx.com.ng/assets/images/og-cover.png">
+		<meta property="og:image:secure_url" content="https://www.sammykingx.com.ng/assets/images/og-cover.png">
+		<meta property="og:image:type" content="image/png">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta property="og:image:alt" content="Sammy Kingx — Senior Software Engineer & SaaS Product Builder">
+		<meta property="og:locale" content="en_US">
+		<!-- Twitter / X -->
+		<meta name="twitter:card" content="#">
+		<meta name="twitter:site" content="@sammykingx18">
+		<meta name="twitter:creator" content="@sammykingx18">
+		<meta name="twitter:title" content="Sammy Kingx | Engineering Lead & Product Builder">
+		<meta name="twitter:description" content="Senior software engineer building scalable SaaS systems, execution infrastructure, and modern digital products.">
+		<meta name="twitter:image" content="https://www.sammykingx.com.ng/assets/og/og-cover-twitter.png">
+		<meta name="twitter:image:alt" content="Sammy Kingx — Senior Software Engineer & SaaS Product Builder">
+		<!-- ═══════════════════════════════════════════
+			GEO TARGETING META TAGS
+			═══════════════════════════════════════════ -->
+		<meta name="geo.region" content="NG">
+		<meta name="geo.placename" content="Nigeria">
+		<meta name="language" content="English">
+		<meta name="coverage" content="Worldwide">
+		<meta name="distribution" content="Global">
+		<meta name="rating" content="General">
+		<!-- ═══════════════════════════════════════════
+			ADDITIONAL AUTHORITY SIGNALS
+			═══════════════════════════════════════════ -->
+		<meta name="revisit-after" content="7 days">
+		<meta name="category" content="Technology, Software Engineering, SaaS">
+		<meta name="classification" content="Portfolio, Professional Services">
+		<meta name="target" content="agencies, investors, startups, businesses">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<title>Sammy Kingx | Engineering Lead & Product Builder</title>
+		<link rel="canonical" href="https://sammykingx.com.ng">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="../../src/css/styles.css">
+	</head>
+	<body data-page="case-study-detail" class="bg-premium-dark max-w-7xl mx-auto overflow-x-hidden">
+		<app-header></app-header>
+
+        <case-study-detail 
+            title="Servio Architecture" 
+            client="Servio Marketplace Platform"
+        >
+            <!-- THE CHALLENGE: 3 Paragraphs -->
+            <div class="space-y-4" slot="challenge">
+                <p>In the high-stakes environment of multi-vendor marketplaces, "Trust Friction" is the primary killer of conversion. For Servio, the challenge wasn't just building a directory of vendors; it was orchestrating a complex ecosystem where financial commitments, service delivery, and dispute resolution co-existed within a single unified flow.</p>
+                <p>Initial analysis revealed that fragmented booking operations were costing the platform significant drop-off rates. The manual nature of escrow deposit authorization—specifically for high-value transactions exceeding $2,500.00—created a bottleneck that overwhelmed internal operations and frustrated both clients and vendors.</p>
+                <p>We needed a system that offered:</p>
+                <ul class="list-disc pl-6 space-y-3 text-white/80">
+                    <li>Zero-latency state changes for real-time payment verification.</li>
+                    <li>Immutable audit logs for escrow deposit authorizations.</li>
+                    <li>Automated service execution triggers upon capital confirmation.</li>
+                </ul>
+            </div>
+
+            <!-- MODULAR SYSTEMS: Deep Tech Paragraphs -->
+            <div class="space-y-4" slot="modular">
+                <p>Built using a strictly decoupled Django backend, the system treats payment rails as "pluggable adapters." This allowed us to swap or aggregate providers like Paystack, Stripe, and Square without touching the business logic of the Servio dashboard.</p>
+                <p>This modularity ensures that the core codebase remains clean and maintainable, reducing technical debt as we scale into new global payment infrastructures.</p>
+            </div>
+
+            <!-- WORKFLOW SEPARATION: Engineering Narrative -->
+            <div class="space-y-4" slot="separation">
+                <p>To maintain platform performance, we separated transactional workflows from the application state. By implementing a push notification system via Firebase Cloud Messaging and service workers, we ensured that users received real-time updates without the need for resource-heavy polling on the primary SQL database.</p>
+                <p>This architectural choice offloaded significant compute power, allowing the system to handle thousands of concurrent state changes during peak transaction periods.</p>
+            </div>
+
+            <!-- INFRASTRUCTURE GROWTH: Business Strategy -->
+            <div class="space-y-4"slot="growth">
+                <p>The platform was designed with a "Global-First" mindset. The database schema was built to support multi-currency and multi-jurisdictional tax compliance from day one, anticipating rapid expansion into North American and European markets.</p>
+                <p>By leveraging cloud-native logging and monitoring, we gained deep visibility into system health, allowing us to predict infrastructure needs before they became performance bottlenecks.</p>
+            </div>
+
+            <!-- FUTURE EXTENSIBILITY: The Roadmap -->
+            <div class="space-y-4" slot="extensibility">
+                <p>Future-proofing involved creating an internal API layer that allows for the seamless integration of third-party logistics and CRM tools. The system is ready to evolve from a marketplace into a comprehensive business operating system for vendors.</p>
+                <p>Key extensibility features include:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>JSON-defined service schemas for rapid vertical expansion.</li>
+                    <li>Event-driven architecture for automated dispute resolution.</li>
+                </ul>
+            </div>
+
+            <!-- OUTCOME: Millionaire Positioning -->
+            <div class="space-y-4" slot="outcome">
+                <p>The transition to this orchestrated architecture transformed Servio from a prototype into a high-fidelity enterprise engine. By automating the payment verification orchestrator, we successfully removed human-in-the-loop delays, resulting in a direct increase in execution efficiency and capital flow.</p>
+                
+                <p><strong>The Results:</strong></p>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+                    <li class="p-4 bg-white/5 rounded-lg border border-white/10">
+                        <span class="text-accent font-bold block mb-1">Operational Clarity</span>
+                        Unified dashboard for monitoring all escrow states and vendor performance.
+                    </li>
+                    <li class="p-4 bg-white/5 rounded-lg border border-white/10">
+                        <span class="text-accent font-bold block mb-1">Scalable Volume</span>
+                        The system now supports high-value deposits ($2,500+) with zero manual intervention.
+                    </li>
+                    <li class="p-4 bg-white/5 rounded-lg border border-white/10">
+                        <span class="text-accent font-bold block mb-1">Conversion Improvement</span>
+                        Reduced transaction abandonment by 40% through real-time feedback loops.
+                    </li>
+                    <li class="p-4 bg-white/5 rounded-lg border border-white/10">
+                        <span class="text-accent font-bold block mb-1">Execution Efficiency</span>
+                        Average project confirmation time dropped from hours to seconds.
+                    </li>
+                </ul>
+
+                <p>This project serves as a blueprint for how I approach technical integration: by identifying the business bottleneck first and engineering the solution to eliminate it.</p>
+            </div>
+
+        </case-study-detail>
+		<app-footer></app-footer>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script type="module" src="../../src/js/main.js"></script>
+	</body>
+</html>

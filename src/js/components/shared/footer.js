@@ -30,7 +30,7 @@ export class AppFooter extends BaseComponent {
                             <div class="flex flex-col gap-4">
                                 <span class="text-[10px] text-white font-bold uppercase tracking-widest">Connect</span>
                                 <a href="#" class="footer-link">LinkedIn</a>
-                                <a href="#" class="footer-link">GitHub</a>
+                                <a href="#" class="footer-link">Instagram</a>
                                 <a href="#" class="footer-link">X / Twitter</a>
                             </div>
                         </div>

@@ -4,7 +4,6 @@
 export class GSAPAnimationEngine {
     constructor() {
         this.gsap = window.gsap;
-        this.initSpotlight();
     }
 
     initSpotlight() {
@@ -31,9 +30,14 @@ export class GSAPAnimationEngine {
                 ease: "sine.inOut"
             });
         });
+    }
 
+    /**
+     * C
+     */
+    addHoverEffect(target) { 
         // Add mesh pulse
-        this.gsap.to("#ambient-mesh", {
+        this.gsap.to(`#${target}`, {
             duration: 15,
             scale: 1.2,
             rotate: 10,
@@ -120,4 +124,38 @@ export class GSAPAnimationEngine {
             ease: "power4.out"
         });
     }
+
+    initHomeHeroNav() {
+        const navItems = document.querySelectorAll('.hero-nav-item');
+        const indicator = document.querySelector('#nav-indicator');
+
+        if (!indicator || navItems.length === 0) return;
+
+        const moveIndicator = (el) => {
+            // We use offsetLeft and offsetWidth to get dimensions relative 
+            // to the 'relative' positioned <nav> container
+            gsap.to(indicator, {
+                left: el.offsetLeft,
+                top: el.offsetTop, // Added top for grid support
+                width: el.offsetWidth,
+                height: el.offsetHeight,
+                duration: 0.6,
+                ease: "expo.out"
+            });
+        };
+
+        navItems.forEach(item => {
+            item.addEventListener('mouseenter', () => moveIndicator(item));
+            item.addEventListener('click', () => moveIndicator(item));
+        });
+
+        // Initialize position at first item after a small delay to ensure layout is painted
+        setTimeout(() => moveIndicator(navItems[0]), 100);
+
+        // Re-calculate on window resize (critical for mobile rotation)
+        window.addEventListener('resize', () => {
+            const activeItem = document.querySelector('.hero-nav-item:hover') || navItems[0];
+            moveIndicator(activeItem);
+        });
+    };
 }

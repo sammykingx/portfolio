@@ -38,6 +38,7 @@ export class Navigation {
         this.toggle.classList.add('is-active');
         this.menu.classList.add('active');
         this.body.classList.add('menu-open');
+
         // Accessibility
         this.toggle.setAttribute('aria-expanded', 'true');
     }
@@ -47,6 +48,7 @@ export class Navigation {
         this.toggle.classList.remove('is-active');
         this.menu.classList.remove('active');
         this.body.classList.remove('menu-open');
+
         // Accessibility
         this.toggle.setAttribute('aria-expanded', 'false');
     }

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- ═════════════════════════════════════════
+			CORE SEO
+			═══════════════════════════════════════════ -->
+		<meta name="description" content="This page doesn't exist or has been moved. Return to Sammy Kingx's portfolio to explore engineering projects, SaaS systems, and case studies.">
+		<meta name="keywords" content="Sammy Kingx, Senior Software Engineer, Product Builder, SaaS Developer, Engineering Lead, Backend Engineer, Marketplace Platforms, Booking Systems, CTO Consulting, Scalable SaaS, Software Engineer Nigeria, Product Engineer, Iyebhora Samuel, Divgm Agency, Japaconsults, Deewon, Oludayo Sokunbi, Wakawaka doctore">
+		<meta name="author" content="Sammy Kingx">
+		<meta name="robots" content="noindex, nofollow">
+        <meta name="googlebot" content="noindex, nofollow">
+		<!-- ══════════════════════════════════════════
+			OPEN GRAPH — Facebook, LinkedIn, WhatsApp
+			═══════════════════════════════════════════ --->
+		<meta property="og:type" content="website">
+        <meta property="og:site_name" content="Sammy Kingx">
+        <meta property="og:title" content="Looks like this page doesn't exist — Sammy Kingx">
+        <meta property="og:description" content="The page you were looking for isn't here. Head back to explore scalable SaaS systems, engineering case studies, and product work by Sammy Kingx.">
+        <meta property="og:url" content="https://sammykingx.com.ng">
+        <meta property="og:locale" content="en_US">
+		<!-- Twitter / X -->
+		<meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@sammykingx18">
+        <meta name="twitter:creator" content="@sammykingx18">
+        <meta name="twitter:title" content="Looks like this page doesn't exist — Sammy Kingx">
+        <meta name="twitter:description" content="The page you were looking for isn't here. Head back to explore engineering work by Sammy Kingx.">
+		<!-- ═══════════════════════════════════════════
+			GEO TARGETING META TAGS
+			═══════════════════════════════════════════ -->
+		<meta name="geo.region" content="NG">
+		<meta name="geo.placename" content="Nigeria">
+		<meta name="language" content="English">
+		<meta name="coverage" content="Worldwide">
+		<meta name="distribution" content="Global">
+		<meta name="rating" content="General">
+
+		<title>404 — Page Not Found | Sammy Kingx</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="src/css/styles.css">
+	</head>
+	<body data-page="error-page" class="bg-dark text-white antialiased overflow-hidden">
+		<app-header></app-header>
+		<main class="relative min-h-screen flex items-center justify-center px-6">
+            <!-- Ambient Background (The "System Void") -->
+            <div id="error-mesh" class="absolute inset-0 opacity-20 pointer-events-none"></div>
+
+            <div class="relative text-center max-w-2xl" data-aos="zoom-out">
+                <!-- Large "System Error" Code -->
+                <h1 class="text-[clamp(6rem,20vw,12rem)] font-black tracking-tighter leading-none mb-4 text-white/30 uppercase">
+                    404
+                </h1>
+
+                <div class="space-y-6">
+                    <div class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 mb-4">
+                        <span class="text-[10px] font-black tracking-[0.3em] uppercase text-accent">Exception: Resource_Not_Found</span>
+                    </div>
+                    
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight uppercase leading-tight">
+                        The Resource <br><span class="text-gray-500">does not exist.</span>
+                    </h2>
+
+                    <p class="text-gray-500 text-sm md:text-base leading-relaxed max-w-md mx-auto">
+                        The system attempted to resolve this route but encountered a null reference. The resource may have been moved, archived, or was never part of the core architecture.
+                    </p>
+
+                    <!-- Navigation Reset -->
+                    <div class="pt-10 flex flex-col md:flex-row items-center justify-center gap-6">
+                        <a href="/" class="group flex items-center gap-3 px-8 py-4 bg-white text-dark font-black uppercase text-[11px] tracking-widest rounded-full hover:bg-accent hover:text-white transition-all duration-500">
+                            Return to Origin
+                            <i class="ph ph-house-line text-lg"></i>
+                        </a>
+                        <a href="/case-studies" class="text-[11px] font-black uppercase tracking-widest text-gray-500 hover:text-white transition-colors flex items-center gap-2">
+                            View System Ledger (Case Studies)
+                            <i class="ph ph-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terminal-style Footer Decoration -->
+            <div class="absolute bottom-10 left-10 hidden md:block">
+                <p class="text-[9px] font-mono text-gray-500 uppercase tracking-widest">
+                    Status: 404 // Trace: Route_Resolver_Failed <br>
+                    Location: <span id="pathName"></span>
+                </p>
+            </div>
+        </main>
+		<app-footer></app-footer>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script type="module" src="./src/js/main.js"></script>
+        <script>
+            const pathName = window.location.pathname;
+            document.getElementById('pathName').textContent = pathName;
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": "404 — Page Not Found",
+                "description": "The requested resource could not be found on sammykingx.com.ng",
+                "url": "https://sammykingx.com.ng/404",
+                "isPartOf": {
+                "@type": "WebSite",
+                "name": "Sammy Kingx",
+                "url": "https://sammykingx.com.ng"
+                },
+                "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://sammykingx.com.ng"
+                    }
+                ]
+                },
+                "potentialAction": {
+                "@type": "ReadAction",
+                "target": "https://sammykingx.com.ng"
+                }
+            }
+        </script>
+	</body>
+</html>

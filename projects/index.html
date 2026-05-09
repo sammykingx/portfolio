@@ -19,13 +19,22 @@
 		<meta property="og:site_name" content="Meet Sammy Kingx">
 		<meta property="og:title" content="Sammy Kingx | Senior Software Engineer & Product Builder">
 		<meta property="og:description" content="Building scalable SaaS systems, marketplace infrastructure, and business-focused digital products engineered for execution and growth.">
+		<meta property="og:url" content="https://www.sammykingx.com.ng">
+		<meta property="og:image" content="https://www.sammykingx.com.ng/assets/images/og-cover.png">
+		<meta property="og:image:secure_url" content="https://www.sammykingx.com.ng/assets/images/og-cover.png">
+		<meta property="og:image:type" content="image/png">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta property="og:image:alt" content="Sammy Kingx — Senior Software Engineer & SaaS Product Builder">
 		<meta property="og:locale" content="en_US">
 		<!-- Twitter / X -->
+		<meta name="twitter:card" content="#">
 		<meta name="twitter:site" content="@sammykingx18">
 		<meta name="twitter:creator" content="@sammykingx18">
 		<meta name="twitter:title" content="Sammy Kingx | Engineering Lead & Product Builder">
 		<meta name="twitter:description" content="Senior software engineer building scalable SaaS systems, execution infrastructure, and modern digital products.">
-		
+		<meta name="twitter:image" content="https://www.sammykingx.com.ng/assets/og/og-cover-twitter.png">
+		<meta name="twitter:image:alt" content="Sammy Kingx — Senior Software Engineer & SaaS Product Builder">
 		<!-- ═══════════════════════════════════════════
 			GEO TARGETING META TAGS
 			═══════════════════════════════════════════ -->
@@ -44,30 +53,54 @@
 		<meta name="target" content="agencies, investors, startups, businesses">
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
-
 		<title>Sammy Kingx | Engineering Lead & Product Builder</title>
-		
 		<link rel="canonical" href="https://sammykingx.com.ng">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-		<link rel="stylesheet" href="src/css/styles.css">
+		<link rel="stylesheet" href="../src/css/styles.css">
 	</head>
-	<body data-page="index" class="bg-premium-dark max-w-7xl mx-auto overflow-x-hidden">
+	<body data-page="projects" class="bg-premium-dark max-w-7xl mx-auto overflow-x-hidden">
 		<app-header></app-header>
-		<main class="relative overflow-hidden">
-			<home-hero></home-hero>
-			<home-projects></home-projects>
-			<home-philosophy></home-philosophy>
-			<home-services></home-services>
-			<home-partners></home-partners>
-			<home-social-proof></home-social-proof>
-			<home-cta></home-cta>
-		</main>
+		<main class="pt-32">
+            <!-- Page Header -->
+            <section class="max-w-7xl mx-auto px-6 mb-16 md:mb-20" data-aos="fade-up">
+                <span class="text-accent text-[10px] uppercase tracking-[0.4em] font-bold block mb-4">Execution Portfolio</span>
+                <h1 class="text-5xl md:text-7xl font-black tracking-tighter mb-6">
+                    PROVEN <br><span class="opacity-30">BUILDS.</span>
+                </h1>
+                <p class="text-gray-500 max-w-xl text-lg">
+                    A high-fidelity gallery of production-ready systems, from payment orchestrators to marketplace infrastructures.
+                </p>
+            </section>
+
+            <!-- Project List -->
+            <project-card 
+                title="Servio Marketplace"
+                sector="Fintech / SaaS"
+                valuation="$6,000+"
+                description="A comprehensive marketplace platform featuring a custom escrow deposit authorization workflow and real-time payment verification."
+                tech="Django, PostgreSQL, Paystack, Firebase, Stripe"
+                image="../src/images/projects/servio/hero-img.png"
+                link="../projects/servio"
+            ></project-card>
+
+            <project-card 
+                title="Global Rail Integration"
+                sector="Infrastructure"
+                valuation="$1,500+"
+                description="Architected global payment infrastructures integrating Stripe, Square, and local gateways for seamless cross-border transactions."
+                tech="Python, API Orchestration, SQL"
+                image="../src/images/projects/servio/749shots_so.png"
+                link="payment-deep-dive.html"
+                reversed
+            ></project-card>
+
+        </main>
 		<app-footer></app-footer>
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-		<script type="module" src="./src/js/main.js"></script>
+		<script type="module" src="../src/js/main.js"></script>
 	</body>
 </html>
