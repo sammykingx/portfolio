@@ -16,7 +16,7 @@ export class HomeProjectSection extends BaseComponent {
 						</p>
 					</div>
 					<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-						<div class="project-card tilt-card" data-aos="fade-up">
+						<div class="project-card" data-aos="fade-up">
 							<div class="p-2">
 								<div class="overflow-hidden rounded-2xl">
 									<img src="./src/images/projects/servio/servio.png" alt="Servio Platform" class="project-image">
@@ -44,7 +44,7 @@ export class HomeProjectSection extends BaseComponent {
 								</a>
 							</div>
 						</div>
-						<div class="project-card tilt-card" data-aos="fade-up" data-aos-delay="200">
+						<div class="project-card" data-aos="fade-up" data-aos-delay="200">
 							<div class="p-2">
 								<div class="overflow-hidden rounded-2xl">
 									<img src="./src/images/projects/scholarlyme/hero.png" alt="Scholarlyme" class="project-image">

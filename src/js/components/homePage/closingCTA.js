@@ -19,12 +19,15 @@ export class HomeClosingCTASection extends BaseComponent {
 							<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10">
 								
 								<div class="lg:col-span-7">
-									<div class="flex items-center gap-3 mb-8" data-aos="fade-right" data-aos-delay="200">
-										<div class="relative flex h-3 w-3">
+									
+									<div class="hidden lg:flex items-center justify-center lg:justify-start gap-3 mb-8" data-aos="fade-right" data-aos-delay="200">
+										<div class="relative flex h-3 w-3 shrink-0">
 											<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
 											<span class="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
 										</div>
-										<span class="text-[10px] font-medium uppercase text-accent">System Status: Available</span>
+										<span class="text-[10px] font-medium uppercase text-accent tracking-wider whitespace-nowrap">
+											System Status: Available
+										</span>
 									</div>
 									
 									<h2 class="font-heading text-xl md:text-4xl font-black tracking-tighter leading- mb-8 uppercase">

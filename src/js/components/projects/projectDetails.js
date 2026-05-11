@@ -18,7 +18,7 @@ export class ProjectDetails extends BaseComponent {
         <section class="max-w-7xl mx-auto px-6 mb-16" data-aos="fade-up">
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
                 <div class="max-w-3xl">
-                    <span class="text-accent text-[10px] uppercase tracking-[0.4em] font-bold block mb-4">${category}</span>
+                    <span class="text-accent text-[10px] uppercase tracking-[0.4em] font-medium block mb-4">${category}</span>
                     <h1 class="text-5xl md:text-7xl font-black tracking-tighter mb-6 uppercase">${title}</h1>
                     <p class="text-gray-400 text-xl leading-relaxed">${description}</p>
                 </div>

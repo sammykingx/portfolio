@@ -228,7 +228,7 @@
   }
 
   .cta-inner {
-    @apply bg-dark/80 rounded-[1.4rem] p-10 lg:p-22 relative overflow-hidden border border-white/5;
+    @apply bg-dark/80 rounded-[1.4rem] p-6 md:p-8 lg:p-20 relative overflow-hidden border border-white/5;
   }
 
   /* Scanline effect for CTA  */
