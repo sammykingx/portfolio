@@ -29,7 +29,7 @@ export class HomePhilosophySection extends BaseComponent {
 								"Premature optimization is a trap, but weak foundations are a death sentence."
 							</p>
 							<p class="text-gray-400 text-sm leading-relaxed">
-								I architect systems that handle the jump from MVP to 10k users without needing a rewrite. My focus is on clean abstractions and robust database design.
+								I build scalable systems with clean architecture and resilient foundations built to grow beyond the MVP stage.
 							</p>
 						</div>
 						<div class="philosophy-card tilt-card group" data-aos="fade-up" data-aos-delay="200">
@@ -45,7 +45,7 @@ export class HomePhilosophySection extends BaseComponent {
 								"If a feature doesn't drive value, it's just expensive debt."
 							</p>
 							<p class="text-gray-400 text-sm leading-relaxed">
-								As a co-founder, I treat your runway as my own. I prioritize features that impact the bottom line, ensuring every line of code serves a business goal.
+								I treat your runway as mine, prioritizing features that impact the bottom line, ensuring every action serves a business goal.
 							</p>
 						</div>
 						<div class="philosophy-card tilt-card group" data-aos="fade-up" data-aos-delay="300">
@@ -61,7 +61,7 @@ export class HomePhilosophySection extends BaseComponent {
 								"Engineering is a universal language, but markets are local."
 							</p>
 							<p class="text-gray-400 text-sm leading-relaxed">
-								With experience across Nigeria, the UK, and North America, I build for diverse infrastructure—optimizing for low-latency in Lagos as well as peak-performance in London.
+								With experience across Nigeria, the UK, and North America, I build systems optimized for low-latency local performance and scalable global reliability.
 							</p>
 						</div>
 					</div>

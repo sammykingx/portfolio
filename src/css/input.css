@@ -191,32 +191,35 @@
     @apply flex gap-8 py-10;
     width: max-content; /* Critical for GSAP marquee */
   }
-
-  .quote-mark {
-    @apply font-heading text-8xl text-accent/10 absolute -top-4 -left-2 select-none;
-  }
   
   .impact-label {
     @apply px-3 py-1 rounded-md bg-accent/10 text-accent text-[9px] font-bold uppercase tracking-widest border border-accent/20;
   }
 
   /* Partner section */
-  .partner-logo-container {
-    @apply flex items-center justify-center p-6 grayscale transition-all duration-500 border border-white/5 bg-surface/20 rounded-2xl hover:bg-surface/40 hover:border-accent/30 hover:grayscale-0;
-    height: 100px; /* Fixed height ensures all boxes are identical */
-  }
+    .partner-logo-v2 {
+        @apply h-8 md:h-10 w-auto object-contain opacity-30 grayscale transition-all duration-500 hover:opacity-100 hover:grayscale-0;
+      }
 
-  .partner-logo {
-    @apply max-h-10 max-w-30 object-contain transition-all duration-500 opacity-30;
-    /* This filter makes any colored logo look like a white silhouette */
-    filter: brightness(0) invert(1); 
-  }
+    .partner-box {
+        @apply w-32 h-12 flex items-center justify-center;
+        /* Optional: Add a very subtle border or bg for debugging alignment */
+        border: 1px solid rgba(255,255,255,0.05);
+    }
 
-  .partner-logo-container:hover .partner-logo {
-    /* If you want the original brand color on hover, remove the filter below */
-    filter: none; 
-    @apply scale-110;
-  }
+    .animate-marquee {
+        animation: marquee 30s linear infinite;
+    }
+
+    /* Pause on hover so users can see specific integrations */
+    .animate-marquee:hover {
+        animation-play-state: paused;
+    }
+
+    @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
 
   /* CTA */
   .cta-terminal {
@@ -225,7 +228,7 @@
   }
 
   .cta-inner {
-    @apply bg-dark/80 rounded-[1.4rem] p-12 lg:p-24 relative overflow-hidden border border-white/5;
+    @apply bg-dark/80 rounded-[1.4rem] p-10 lg:p-22 relative overflow-hidden border border-white/5;
   }
 
   /* Scanline effect for CTA  */
@@ -242,48 +245,79 @@
   }
 
   /* Footer */
-  .footer-divider {
-    @apply w-full h-px bg-linear-to-r from-transparent via-white/10 to-transparent my-12;
-  }
-
   .footer-link {
-    @apply text-[10px] uppercase tracking-[0.2em] text-gray-500 hover:text-accent transition-all duration-300 font-bold;
+      @apply text-gray-500 hover:text-accent tracking-widest transition-all duration-300 font-bold uppercase inline-block w-max;
+    }
+
+  /* Create a subtle line under footer links on hover */
+  .footer-link::after {
+    content: '';
+    @apply block w-0 h-px bg-accent transition-all duration-300;
   }
 
-  .footer-brand-text {
-    @apply font-heading text-[clamp(2rem,10vw,8rem)] font-black leading-[0.8] tracking-tighter text-white/3 absolute bottom-0 left-0 w-full text-center pointer-events-none select-none;
+  .footer-link:hover::after {
+    @apply w-full;
   }
 
   /* Project details */
-  /* Bento Grid Utilities */
-  .grid-cols-12 {
-      grid-template-columns: repeat(12, minmax(0, 1fr));
-  }
+  /* --- Bento Grid Desktop Logic --- */
+.grid-cols-12 {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
 
-  /* Ensure images cover the bento area */
-  .bento-item img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-  }
+.grid-flow-dense {
+    grid-auto-flow: dense;
+}
 
-  /* Smooth scaling on hover for a premium feel */
-  .group:hover img {
-      transform: scale(1.05);
-  }
+/* Base image behavior for the bento effect */
+.group img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* High-fidelity cropping for desktop */
+    transition: transform 1.0s cubic-bezier(0.19, 1, 0.22, 1);
+}
 
-  @media (max-width: 768px) {
-      /* On mobile, revert to a clean single column but keep consistent height */
-      .grid {
-          grid-template-columns: 1fr !important;
-          auto-rows: auto !important;
-      }
-      
-      .md\:col-span-8, .md\:col-span-4, .md\:col-span-12, .md\:col-span-6 {
-          grid-column: span 1 / span 1 !important;
-          grid-row: span 1 / span 1 !important;
-      }
-  }
+.group:hover img {
+    transform: scale(1.05);
+}
+
+/* Focus on top for tall mobile slots on desktop */
+.md\:col-span-4 img {
+    object-position: top center;
+}
+
+/* --- Responsive Reset (Mobile) --- */
+@media (max-width: 768px) {
+    /* 1. Kill the grid rows so they don't force a height */
+    .grid {
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+        gap: 1.5rem !important;
+    }
+    
+    /* 2. Allow containers to grow with the image */
+    .md\:col-span-8, 
+    .md\:col-span-4, 
+    .md\:col-span-12 {
+        width: 100% !important;
+        height: auto !important; /* Allow natural expansion */
+        min-height: unset !important;
+    }
+
+    /* 3. The Magic Fix: Display full image without cropping */
+    .group img {
+        height: auto !important; /* Let the image dictate height */
+        object-fit: contain !important; /* Ensure nothing is cut off */
+        background: #0a0a0a; /* Subtle background for transparency/aspect gaps */
+    }
+
+    /* Remove the hover overlay's absolute centering if it interferes */
+    .group div.flex {
+        padding: 1.5rem !important;
+    }
+}
 }
 
 @keyframes glow {

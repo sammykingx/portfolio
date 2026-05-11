@@ -18,7 +18,7 @@ export class AppHeader extends BaseComponent {
                         <li><a href="/articles" class="nav-link">Technical Insights</a></li>
                     </ul>
                     <div class="hidden md:block">
-                        <a href="#contact" class="btn-premium">Talk Product</a>
+                        <a href="mailto:hello@sammykingx.com.ng?subject=Project%20Inquiry&body=Hi%20Sammy,%0A%0AI%27m%20interested%20in%20starting%20a%20new%20project.%20Please%20help%20me%20begin%20the%20project%20initiation%20process%20by%20telling%20me%20what%20you%20need%20to%20know%20about%20my%20business%20and%20goals.%0A%0ABest%20regards," class="btn-premium">Talk Project</a>
                     </div>
                     <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5 p-2 focus:outline-none" aria-label="Toggle Menu" aria-expanded="false">
                     <span class="hamburger-line line-1"></span>
@@ -36,10 +36,10 @@ export class AppHeader extends BaseComponent {
                         </nav>
                         <div class="h-px w-full bg-white/10 my-4"></div>
                         <span class="text-[10px] uppercase tracking-[0.3em] text-gray-500 font-bold">Collaboration</span>
-                        <a href="#contact" class="btn-premium w-full text-center py-4 text-sm">Start a Project</a>
+                        <a href="mailto:hello@sammykingx.com.ng?subject=Project%20Inquiry&body=Hi%20Sammy,%0A%0AI%27m%20ready%20to%20start%20a%20project%20and%20would%20like%20to%20begin%20the%20project%20initiation%20process.%20Please%20let%20me%20know%20what%20you%20need%20to%20get%20started.%0A%0ABest%20regards," class="btn-premium w-full text-center py-4 text-sm">Start a Project</a>
                         <div class="flex gap-6 mt-4">
                             <a href="https://www.linkedin.com/in/iyebhora-samuel" class="text-xs text-gray-500 hover:text-white transition-colors">LinkedIn</a>
-                            <a href="https://www.instagram.com/iyebhora_samuel" class="text-xs text-gray-500 hover:text-white transition-colors">Instagram</a>
+                            <a href="https://www.instagram.com/sammykingx18" class="text-xs text-gray-500 hover:text-white transition-colors">Instagram</a>
                             <a href="https://x.com/sammykingx18" class="text-xs text-gray-500 hover:text-white transition-colors">X / Twitter</a>
                         </div>
                     </div>

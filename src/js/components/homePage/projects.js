@@ -12,7 +12,7 @@ export class HomeProjectSection extends BaseComponent {
 							<h2 class="font-heading text-4xl md:text-6xl font-extrabold tracking-tighter">Featured <span class="text-gray-500">Systems</span></h2>
 						</div>
 						<p class="max-w-xs text-gray-500 text-sm leading-relaxed" data-aos="fade-left">
-							A collection of scalable SaaS products and high-performance architectures built for global markets.
+							A collection of scalable products and high-performance architectures built for global markets.
 						</p>
 					</div>
 					<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -25,7 +25,8 @@ export class HomeProjectSection extends BaseComponent {
 							<div class="p-8">
 								<div class="flex flex-wrap gap-2 mb-6">
 									<span class="tech-pill">Django</span>
-									<span class="tech-pill">Pydantic</span>
+									<span class="tech-pill">Tailwind CSS</span>
+									<span class="tech-pill">Alpine.js</span>
 									<span class="tech-pill">Firebase</span>
 									<span class="tech-pill">Stripe</span>
 									<span class="tech-pill">Paystack</span>
@@ -51,15 +52,16 @@ export class HomeProjectSection extends BaseComponent {
 							</div>
 							<div class="p-8">
 								<div class="flex flex-wrap gap-2 mb-6">
-									<span class="tech-pill">Ubuntu</span>
+									<span class="tech-pill">AWS</span>
 									<span class="tech-pill">Nginx</span>
 									<span class="tech-pill">Node.js</span>
+									<span class="tech-pill">MySQL</span>
 								</div>
 								<h3 class="font-heading text-2xl font-bold mb-3">Scholarlyme</h3>
 								<p class="text-gray-400 text-sm leading-relaxed mb-6">
 									A mobile platform for students and professionals to discover opportunities, join communities, collaborate on projects, and attend events all in one place.
 								</p>
-								<a href="#" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-accent group/link">
+								<a href="/projects/scholarlyme" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-accent group/link">
 									Explore Product
 									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover/link:translate-x-1">
 										<path d="M5 12h14"/>

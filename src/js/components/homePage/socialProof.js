@@ -4,8 +4,8 @@ import { BaseComponent } from "../baseComponents.js";
 export class HomeSocialProofSection extends BaseComponent {
     connectedCallback() {
         this.render(`
-            <section id="impact" class="py-26 relative" data-aos="fade-up">
-				<div class="max-w-7xl mx-auto px-6 mb-12">
+            <section id="impact" class="pt-24 relative" data-aos="fade-up">
+				<div class="max-w-7xl mx-auto px-6 mb-5 md:mb-10">
 					<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
 						<div class="max-w-xl">
 							<span class="text-accent text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block">Impact Analysis</span>
@@ -21,11 +21,11 @@ export class HomeSocialProofSection extends BaseComponent {
 				<div class="testimonial-wrapper flex overflow-hidden group">
 					<div id="testimonial-track" class="testimonial-slider-container">
 						<div class="testimonial-card group/card">
-							<span class="quote-mark">“</span>
+
 							<div class="relative z-10 h-full flex flex-col justify-between">
 								<div>
 									<div class="flex items-center justify-between mb-8">
-										<div class="impact-label">Scale-Ready Architecture</div>
+										<div class="impact-label">MVP Build</div>
 										<span class="text-[10px] text-gray-600 font-mono tracking-tighter">SECURED // 2026</span>
 									</div>
 									<p class="text-xl font-medium leading-relaxed mb-12 text-gray-200">
@@ -43,11 +43,10 @@ export class HomeSocialProofSection extends BaseComponent {
 							</div>
 						</div>
 						<div class="testimonial-card group/card">
-							<span class="quote-mark">“</span>
 							<div class="relative z-10 h-full flex flex-col justify-between">
 								<div>
 									<div class="flex items-center justify-between mb-8">
-										<div class="impact-label">Infrastructure Reliability</div>
+										<div class="impact-label">3rd Party Setup</div>
 										<span class="text-[10px] text-gray-600 font-mono tracking-tighter">VERIFIED // 2026</span>
 									</div>
 									<p class="text-xl font-medium leading-relaxed mb-12 text-gray-200">
@@ -65,7 +64,6 @@ export class HomeSocialProofSection extends BaseComponent {
 							</div>
 						</div>
 						<div class="testimonial-card group/card">
-							<span class="quote-mark">“</span>
 							<div class="relative z-10 h-full flex flex-col justify-between">
 								<div>
 									<div class="flex items-center justify-between mb-8">

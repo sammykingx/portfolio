@@ -14,7 +14,7 @@ export class HomeHeroSection extends BaseComponent {
 					<div class="lg:col-span-4 relative group lg:mt-2" data-aos="fade-right" data-aos-duration="1200">
 						<div id="profile-container" class="tilt-card relative overflow-hidden rounded-3xl border border-white/10 glass-header p-2 bg-surface/50">
 							<div class="relative overflow-hidden rounded-2xl">
-								<img src="src/images/personal/professional-img-headshot.jpeg" alt="Sammy Kingx" class="w-full object-cover aspect-4/5 transition-transform duration-700 group-hover:scale-105">
+								<img class="rounded-xl" src="src/images/personal/professional-img-headshot.jpeg" alt="Sammy Kingx" class="w-full object-cover aspect-4/5 transition-transform duration-700 group-hover:scale-105">
 							</div>
 							<div class="p-6 flex flex-col items-center text-center">
 								<h3 class="font-heading text-xl font-extrabold tracking-tighter">Iyebhora Samuel (Sammy)</h3>
@@ -40,7 +40,7 @@ export class HomeHeroSection extends BaseComponent {
 											<path d="M18 2h3l-7 8 8 12h-6l-5-7-6 7H2l8-9L2 2h6l5 7z"/>
 										</svg>
 									</a>
-									<a aria-label="Instagram" href="#" class="w-10 h-10 rounded-full glass-header flex items-center justify-center text-gray-400 hover:text-accent hover:border-accent transition-all">
+									<a aria-label="Instagram" href="https://instagram.com/sammykingx18" class="w-10 h-10 rounded-full glass-header flex items-center justify-center text-gray-400 hover:text-accent hover:border-accent transition-all">
 										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram">
 											<rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
 											<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
@@ -66,12 +66,13 @@ export class HomeHeroSection extends BaseComponent {
 											<circle cx="4" cy="4" r="2"/>
 										</svg>
 									</a>
+									<!--
 									<a aria-label="yotube" href="https://www.youtube.com/@sammykingx" class="w-10 h-10 rounded-full glass-header flex items-center justify-center text-gray-400 hover:text-accent hover:border-accent transition-all">
 										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube">
 											<path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 2-2 69.44 69.44 0 0 1 15 0 2 2 0 0 1 2 2 24.12 24.12 0 0 1 0 10 2 2 0 0 1-2 2 69.44 69.44 0 0 1-15 0 2 2 0 0 1-2-2Z" />
 											<path d="m10 15 5-3-5-3z" />
 										</svg>
-									</a>
+									</a>-->
 								</div>
 							</div>
 						</div>
@@ -109,7 +110,7 @@ export class HomeHeroSection extends BaseComponent {
 							</div>
 						</div>
 						<!-- Mini On-Page Terminal Menu -->
-						<div class="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-4 mt-10" data-aos="fade-up" data-aos-delay="1200">
+						<div class="hidden lg:flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-4 mt-10" data-aos="fade-up" data-aos-delay="1200">
 							<!-- Navigation Container: Grid on mobile, Flex on desktop -->
 							<nav class="relative w-full sm:w-auto p-1 bg-white/3 border border-white/10 backdrop-blur-md rounded-2xl grid grid-cols-3 sm:flex sm:items-center">
 								
