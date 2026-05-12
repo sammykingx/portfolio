@@ -80,7 +80,7 @@
   }
 
   .stat-card {
-    @apply flex flex-col gap-1 p-6 rounded-2xl border-white/5;
+    @apply flex flex-col gap-1 p-6 rounded-2xl border border-white/5 bg-white/3 min-w-0;
   }
 
   .badge-outline {
@@ -259,65 +259,57 @@
     @apply w-full;
   }
 
-  /* Project details */
-  /* --- Bento Grid Desktop Logic --- */
-.grid-cols-12 {
+  /* Project details Bento Grid */
+  .bento-grid {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-
-.grid-flow-dense {
     grid-auto-flow: dense;
-}
+  }
 
-/* Base image behavior for the bento effect */
-.group img {
+  /* Base image behavior for the bento effect */
+  .bento-grid .group img {
     height: 100%;
     width: 100%;
-    object-fit: cover; /* High-fidelity cropping for desktop */
+    object-fit: cover;
     transition: transform 1.0s cubic-bezier(0.19, 1, 0.22, 1);
-}
+  }
 
-.group:hover img {
+  .bento-grid .group:hover img {
     transform: scale(1.05);
-}
+  }
 
-/* Focus on top for tall mobile slots on desktop */
-.md\:col-span-4 img {
+  /* Focus on top for tall portrait slots */
+  .bento-grid .md\:col-span-4 img {
     object-position: top center;
-}
+  }
 
-/* --- Responsive Reset (Mobile) --- */
-@media (max-width: 768px) {
-    /* 1. Kill the grid rows so they don't force a height */
-    .grid {
-        display: flex !important;
-        flex-direction: column !important;
-        height: auto !important;
-        gap: 1.5rem !important;
-    }
-    
-    /* 2. Allow containers to grow with the image */
-    .md\:col-span-8, 
-    .md\:col-span-4, 
-    .md\:col-span-12 {
-        width: 100% !important;
-        height: auto !important; /* Allow natural expansion */
-        min-height: unset !important;
+  /* --- Bento Grid Mobile Reset --- */
+  @media (max-width: 768px) {
+    .bento-grid {
+      display: flex !important;
+      flex-direction: column !important;
+      height: auto !important;
+      gap: 1.5rem !important;
     }
 
-    /* 3. The Magic Fix: Display full image without cropping */
-    .group img {
-        height: auto !important; /* Let the image dictate height */
-        object-fit: contain !important; /* Ensure nothing is cut off */
-        background: #0a0a0a; /* Subtle background for transparency/aspect gaps */
+    .bento-grid .md\:col-span-8,
+    .bento-grid .md\:col-span-4,
+    .bento-grid .md\:col-span-12 {
+      width: 100% !important;
+      height: auto !important;
+      min-height: unset !important;
     }
 
-    /* Remove the hover overlay's absolute centering if it interferes */
-    .group div.flex {
-        padding: 1.5rem !important;
+    .bento-grid .group img {
+      height: auto !important;
+      object-fit: contain !important;
+      background: #0a0a0a;
     }
-}
+
+    .bento-grid .group div.flex {
+      padding: 1.5rem !important;
+    } 
+  }
 }
 
 @keyframes glow {

@@ -4,7 +4,7 @@ import { BaseComponent } from "../baseComponents.js";
 export class HomeSocialProofSection extends BaseComponent {
     connectedCallback() {
         this.render(`
-            <section id="impact" class="pt-24 relative" data-aos="fade-up">
+            <section id="impact" class="pt-16 px-3 relative" data-aos="fade-up">
 				<div class="max-w-7xl mx-auto px-6 mb-5 md:mb-10">
 					<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
 						<div class="max-w-xl">

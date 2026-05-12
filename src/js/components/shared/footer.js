@@ -14,59 +14,55 @@ export class AppFooter extends BaseComponent {
         const [hours, minutes] = watTime.split(':');
 
         this.render(`
-            <footer class="relative pt-20 pb-12 overflow-hidden border-t border-white/5 bg-dark">
+            <footer class="relative pt-15 pb-10 overflow-hidden border-t border-white/5 bg-dark">
                 <div class="max-w-7xl mx-auto px-6 relative z-10">
                     <!-- Main Grid -->
-                    <div class="grid grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
-
-                        <!-- Brand Section: Centralized and Full Width on Mobile -->
-                        <div class="lg:col-span-4 flex flex-col items-center lg:items-start text-center lg:text-left w-full" data-aos="fade-up">
-                            <div class="flex items-center gap-3 mb-8">
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 items-start">
+                        <!-- Brand -->
+                        <div class="col-span-2 lg:col-span-1 flex flex-col items-start" data-aos="fade-up">
+                            <div class="flex items-center gap-3 mb-4">
                                 <div class="w-8 h-8 bg-white rounded flex items-center justify-center">
                                     <span class="text-black font-heading font-extrabold text-xs">S</span>
                                 </div>
                                 <span class="font-heading text-xs font-extrabold tracking-tight uppercase">Sammy Kingx</span>
                             </div>
-                            <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
+                            <p class="text-gray-500 text-sm leading-relaxed">
                                 Partner with me to turn your vision into a competitive advantage. I help companies unlock growth through smart technology and strategic planning.
                             </p>
                         </div>
 
-                        <!-- Links Section: Side-by-Side on Mobile -->
-                        <div class="grid lg:col-span-4 grid-cols-2 gap-6 w-full" data-aos="fade-up" data-aos-delay="100">
-                            <div class="flex flex-col gap-4">
-                                <span class="text-[10px] text-white font-black uppercase tracking-[0.2em] mb-2">Sitemap</span>
-                                <a href="/projects" class="footer-link text-[11px]">Projects</a>
-                                <a href="/case-studies" class="footer-link text-[11px]">Case Studies</a>
-                                <a href="/articles" class="footer-link text-[11px]">Articles</a>
-                                <a href="#solutions" class="footer-link text-[11px]">Partnership</a>
-                            </div>
-                            
-                            <div class="flex flex-col gap-4">
-                                <span class="text-[10px] text-white font-black uppercase tracking-[0.2em] mb-2">Connect</span>
-                                <a href="https://www.linkedin.com/in/iyebhora-samuel/" target="_blank" class="footer-link text-[11px]">LinkedIn</a>
-                                <a href="https://instagram.com/sammykingx18" target="_blank" class="footer-link text-[11px]">Instagram</a>
-                                <a href="https://x.com/sammykingx18" target="_blank" class="footer-link text-[11px]">X / Twitter</a>
-                                <a href="https://youtube.com/@sammykingx" target="_blank" class="footer-link text-[11px]">Youtube</a>
-                            </div>
+                        <!-- Sitemap -->
+                        <div class="flex flex-col gap-4" data-aos="fade-up" data-aos-delay="100">
+                            <span class="text-[10px] text-white font-black uppercase tracking-[0.2em] mb-2">Sitemap</span>
+                            <a href="/projects" class="footer-link text-[11px]">Projects</a>
+                            <a href="/case-studies" class="footer-link text-[11px]">Case Studies</a>
+                            <a href="/articles" class="footer-link text-[11px]">Articles</a>
+                            <a href="#solutions" class="footer-link text-[11px]">Partnership</a>
                         </div>
 
-                        <!-- Global Presence: Centralized and Full Width on Mobile -->
-                        <div class="lg:col-span-4 text-center lg:text-right w-full" data-aos="fade-up" data-aos-delay="200">
-                            <span class="text-[10px] text-white font-black uppercase tracking-[0.2em] mb-8 block">Global Presence</span>
-                            <div class="space-y-6">
-                                <div class="group">
-                                    <span class="text-[9px] text-accent font-mono uppercase tracking-tighter opacity-50 group-hover:opacity-100 transition-opacity">Hub 01 //</span>
-                                    <span class="text-[11px] text-gray-400 ml-2 font-medium">Lagos, Nigeria (WAT)</span>
-                                </div>
-                                <div class="group">
-                                    <span class="text-[9px] text-accent font-mono uppercase tracking-tighter opacity-50 group-hover:opacity-100 transition-opacity">Hub 02 //</span>
-                                    <span class="text-[11px] text-gray-400 ml-2 font-medium">London, UK (GMT)</span>
-                                </div>
-                                <div class="group">
-                                    <span class="text-[9px] text-accent font-mono uppercase tracking-tighter opacity-50 group-hover:opacity-100 transition-opacity">Hub 03 //</span>
-                                    <span class="text-[11px] text-gray-400 ml-2 font-medium">North America (EST)</span>
-                                </div>
+                        <!-- Connect -->
+                        <div class="flex flex-col gap-4" data-aos="fade-up" data-aos-delay="200">
+                            <span class="text-[10px] text-white font-black uppercase tracking-[0.2em] mb-2">Connect</span>
+                            <a href="https://www.linkedin.com/in/iyebhora-samuel/" target="_blank" class="footer-link text-[11px]">LinkedIn</a>
+                            <a href="https://instagram.com/sammykingx18" target="_blank" class="footer-link text-[11px]">Instagram</a>
+                            <a href="https://x.com/sammykingx18" target="_blank" class="footer-link text-[11px]">X / Twitter</a>
+                            <a href="https://youtube.com/@sammykingx" target="_blank" class="footer-link text-[11px]">Youtube</a>
+                        </div>
+
+                        <!-- Global Presence -->
+                        <div class="sm:col-span-2 lg:col-span-1 flex flex-col gap-6" data-aos="fade-up" data-aos-delay="300">
+                            <span class="text-[10px] text-white font-black uppercase tracking-[0.2em]">Global Presence</span>
+                            <div class="group">
+                                <span class="text-[9px] text-accent font-mono uppercase tracking-tighter opacity-50 group-hover:opacity-100 transition-opacity">Hub 01 //</span>
+                                <span class="text-[11px] text-gray-400 ml-2 font-medium">Lagos, Nigeria (WAT)</span>
+                            </div>
+                            <div class="group">
+                                <span class="text-[9px] text-accent font-mono uppercase tracking-tighter opacity-50 group-hover:opacity-100 transition-opacity">Hub 02 //</span>
+                                <span class="text-[11px] text-gray-400 ml-2 font-medium">London, UK (GMT)</span>
+                            </div>
+                            <div class="group">
+                                <span class="text-[9px] text-accent font-mono uppercase tracking-tighter opacity-50 group-hover:opacity-100 transition-opacity">Hub 03 //</span>
+                                <span class="text-[11px] text-gray-400 ml-2 font-medium">North America (EST)</span>
                             </div>
                         </div>
                     </div>

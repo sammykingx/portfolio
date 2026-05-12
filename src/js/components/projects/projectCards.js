@@ -6,6 +6,7 @@ export class ProjectCard extends BaseComponent {
         const title = this.getAttribute('title');
         const sector = this.getAttribute('sector');
         const valuation = this.getAttribute('valuation');
+        const projectRole = this.getAttribute('project-role');
         const description = this.getAttribute('description');
         const tech = this.getAttribute('tech').split(',');
         const image = this.getAttribute('image');
@@ -25,22 +26,22 @@ export class ProjectCard extends BaseComponent {
                                 <span class="text-[10px] uppercase tracking-[0.3em] text-gray-500 font-bold">Status: Sold</span>
                             </div>
                             
-                            <h2 class="font-heading text-4xl md:text-5xl font-black mb-6 tracking-tighter">
+                            <h2 class="font-heading text-2xl md:text-4xl font-black mb-5 tracking-tighter">
                                 ${title}
                             </h2>
                             
-                            <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                            <p class="text-gray-400 text-base md:text-lg leading-relaxed mb-8">
                                 ${description}
                             </p>
 
                             <div class="grid grid-cols-2 gap-6 mb-10">
                                 <div>
                                     <span class="block text-[10px] uppercase text-gray-600 mb-1 font-bold">Involved Volume</span>
-                                    <span class="text-xl font-mono text-white">${valuation}</span>
+                                    <span class="text-lg font-mono text-white">${valuation}</span>
                                 </div>
                                 <div>
                                     <span class="block text-[10px] uppercase text-gray-600 mb-1 font-bold">Role</span>
-                                    <span class="text-xl text-white">Lead Architect</span>
+                                    <span class="text-base md:text-lg text-white">${projectRole}</span>
                                 </div>
                             </div>
 

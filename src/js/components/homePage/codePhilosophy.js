@@ -4,7 +4,7 @@ import { BaseComponent } from "../baseComponents.js";
 export class HomePhilosophySection extends BaseComponent {
     connectedCallback() {
         this.render(`
-            <section id="philosophy" class="pt-26 relative overflow-hidden">
+            <section id="philosophy" class="pt-26 px-3 relative overflow-hidden">
 				<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(34,185,94,0.02),transparent_70%)] pointer-events-none"></div>
 				<div class="max-w-7xl mx-auto px-6">
 					<div class="max-w-2xl mb-20" data-aos="fade-up">

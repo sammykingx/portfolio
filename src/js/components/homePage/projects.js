@@ -4,7 +4,7 @@ import { BaseComponent } from "../baseComponents.js";
 export class HomeProjectSection extends BaseComponent {
     connectedCallback() {
         this.render(`
-            <section id="projects" class="pt-26 relative">
+            <section id="projects" class="pt-26 px-3 relative">
 				<div class="max-w-7xl mx-auto px-6">
 					<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
 						<div data-aos="fade-up">

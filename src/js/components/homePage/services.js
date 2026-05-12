@@ -4,7 +4,7 @@ import { BaseComponent } from "../baseComponents.js";
 export class HomeServicesSection extends BaseComponent {
     connectedCallback() {
         this.render(`
-            <section id="solutions" class="pt-26 relative">
+            <section id="solutions" class="pt-24 px-3 relative">
 				<div class="max-w-7xl mx-auto px-6">
 					<div class="mb-20" data-aos="fade-up">
 						<span class="text-accent text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block">How I Partner</span>

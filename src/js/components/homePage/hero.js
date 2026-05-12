@@ -89,7 +89,7 @@ export class HomeHeroSection extends BaseComponent {
 						<p class="max-w-xl text-gray-400 text-lg leading-relaxed font-light" data-aos="fade-up" data-aos-delay="600">
 							Engineering scalable SaaS systems, marketplace infrastructure, and business-focused digital products built for execution and growth.
 						</p>
-						<div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+						<div class="grid grid-cols-2 md:grid-cols-3 gap-3 mt-3">
 							<div class="stat-card" data-aos="zoom-in-up" data-aos-delay="800">
 								<div class="flex items-baseline gap-1">
 									<span class="text-3xl font-heading font-bold text-white counter">6</span>
@@ -104,13 +104,13 @@ export class HomeHeroSection extends BaseComponent {
 								</div>
 								<span class="text-[10px] text-gray-500 uppercase tracking-[0.2em]">SaaS Products</span>
 							</div>
-							<div class="stat-card col-span-2 md:col-span-1" data-aos="zoom-in-up" data-aos-delay="1000">
+							<div class="stat-card" data-aos="zoom-in-up" data-aos-delay="1000">
 								<span class="text-3xl font-heading font-bold text-accent">99.9%</span>
 								<span class="text-[10px] text-gray-500 uppercase tracking-[0.2em]">Uptime Mindset</span>
 							</div>
 						</div>
 						<!-- Mini On-Page Terminal Menu -->
-						<div class="hidden lg:flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-4 mt-10" data-aos="fade-up" data-aos-delay="1200">
+						<div class="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-4 mt-10" data-aos="fade-up" data-aos-delay="1200">
 							<!-- Navigation Container: Grid on mobile, Flex on desktop -->
 							<nav class="relative w-full sm:w-auto p-1 bg-white/3 border border-white/10 backdrop-blur-md rounded-2xl grid grid-cols-3 sm:flex sm:items-center">
 								
