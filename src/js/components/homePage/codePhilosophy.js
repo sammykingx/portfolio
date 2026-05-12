@@ -14,7 +14,7 @@ export class HomePhilosophySection extends BaseComponent {
 							<span class="text-gradient-gray">Engineering.</span>
 						</h2>
 					</div>
-					<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 						<div class="philosophy-card tilt-card group" data-aos="fade-up" data-aos-delay="100">
 							<div class="icon-box group-hover:scale-110 transition-transform duration-500">
 								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

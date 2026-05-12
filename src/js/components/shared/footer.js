@@ -14,7 +14,7 @@ export class AppFooter extends BaseComponent {
         const [hours, minutes] = watTime.split(':');
 
         this.render(`
-            <footer class="relative pt-20 pb-10 overflow-hidden border-t border-white/5 bg-dark">
+            <footer class="relative pt-20 pb-10 px-5 overflow-hidden border-t border-white/5 bg-dark">
                 <div class="max-w-7xl mx-auto px-6 relative z-10">
                     <!-- Main Grid -->
                     <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 items-start">

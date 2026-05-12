@@ -12,7 +12,7 @@ export class HomeServicesSection extends BaseComponent {
 							Strategic <span class="text-gray-500">Execution.</span>
 						</h2>
 					</div>
-					<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 						<div class="engagement-card group relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
 							<span class="text-number">01</span>
 							<div>

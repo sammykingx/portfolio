@@ -10,7 +10,7 @@ export class CaseStudyDetail extends BaseComponent {
         const originalContent = template ? template.content : null;
 
         this.render(`
-            <article class="pt-30 pb-18 px-3">
+            <article class="pt-30 pb-18 px-5">
                 <!-- Header Section -->
                 <header class="max-w-4xl mx-auto px-6 py-8 md:py-14" data-aos="fade-up">
                     <div class="flex items-center gap-4 mb-8">
@@ -18,7 +18,7 @@ export class CaseStudyDetail extends BaseComponent {
                         <div class="h-px w-12 bg-white/10"></div>
                         <span class="text-gray-500 text-[9px] font-medium uppercase tracking-[0.4em]">${client}</span>
                     </div>
-                    <h1 class="text-3xl md:text-6xl font-black tracking-tighter mt-3 mb-5 leading-[1.05] uppercase">
+                    <h1 class="text-2xl md:text-4xl lg:text-6xl font-black tracking-tighter mt-3 mb-5 leading-[1.05] uppercase">
                         ${title}
                     </h1>
                 </header>
@@ -34,9 +34,9 @@ export class CaseStudyDetail extends BaseComponent {
                 <!-- Section 02: The Logic (Full Width Dark Section) -->
                 <section class="bg-white/1 border-y border-white/5 py-16 mb-12 relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-1/2 h-full bg-accent/5 blur-[120px] pointer-events-none"></div>
-                    <div class="max-w-5xl mx-auto px-6 relative z-10">
-                        <h2 class="text-[10px] uppercase tracking-[0.3em] text-accent font-bold mb-16">02. Engineering Architecture</h2>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-16">
+                    <div class="max-w-5xl mx-auto px-6 relative">
+                        <h2 class="text-[10px] uppercase tracking-[0.3em] text-accent font-bold mb-10">02. Engineering Architecture</h2>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
                             <div class="space-y-6">
                                 <h3 class="text-white text-2xl font-bold tracking-tight uppercase">Modular Core Systems</h3>
                                 <div class="text-gray-400 text-base leading-relaxed" data-content="modular"></div>

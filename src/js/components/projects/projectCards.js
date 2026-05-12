@@ -26,7 +26,7 @@ export class ProjectCard extends BaseComponent {
                                 <span class="text-[10px] uppercase tracking-[0.3em] text-gray-500 font-bold">Status: Sold</span>
                             </div>
                             
-                            <h2 class="font-heading text-2xl md:text-4xl font-black mb-5 tracking-tighter">
+                            <h2 class="font-heading text-2xl md:text-3xl lg:text-4xl font-black mb-5 tracking-tighter">
                                 ${title}
                             </h2>
                             

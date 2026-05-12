@@ -4,7 +4,7 @@ import { BaseComponent } from "../baseComponents.js";
 export class HomeClosingCTASection extends BaseComponent {
     connectedCallback() {
         this.render(`
-            <section id="initiation" class="pt-22 relative overflow-hidden">
+            <section id="initiation" class="pt-22 px-5 relative overflow-hidden">
 				<div class="absolute inset-0 -z-10 opacity-20">
 					<div class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[40px_40px] mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
 				</div>

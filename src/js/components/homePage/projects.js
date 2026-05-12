@@ -15,7 +15,7 @@ export class HomeProjectSection extends BaseComponent {
 							A collection of scalable products and high-performance architectures built for global markets.
 						</p>
 					</div>
-					<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+					<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 						<div class="project-card" data-aos="fade-up">
 							<div class="p-2">
 								<div class="overflow-hidden rounded-2xl">
@@ -71,11 +71,13 @@ export class HomeProjectSection extends BaseComponent {
 							</div>
 						</div>
 					</div>
+					<!--
 					<div class="mt-12 text-center" data-aos="fade-up">
 						<a href="#all-projects" class="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-500 hover:text-white transition-colors py-4 px-8 border border-white/5 rounded-full hover:bg-white/5">
 						Browse Full Archive (20+)
 						</a>
 					</div>
+					-->
 				</div>
 			</section>
         `);

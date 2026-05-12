@@ -14,15 +14,15 @@ export class ProjectDetails extends BaseComponent {
         const images = this.getAttribute('gallery')?.split(',') || [];
 
         this.render(`
-            <main class="pt-32 pb-20">
+            <main class="pt-32 pb-20 px-5">
                 <section class="max-w-7xl mx-auto px-6 mb-16" data-aos="fade-up">
                     <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
                         <div class="max-w-3xl">
                             <span class="text-accent text-[9px] uppercase tracking-[0.3em] font-medium block mb-4">${category}</span>
                             <h1 class="text-3xl md:text-6xl font-black tracking-tighter mb-6 uppercase">${title}</h1>
-                            <p class="text-gray-400 text-base md:text-lg leading-relaxed">${description}</p>
+                            <p class="text-gray-400 text-base md:text-md lg:text-lg leading-relaxed">${description}</p>
                         </div>
-                        <div class="hidden md:flex flex-col gap-4">
+                        <div class="hidden lg:flex flex-col gap-4">
                             ${liveLink ? `<a href="${liveLink}" target="_blank" class="btn-premium flex items-center justify-center gap-2">View Live<i class="ph ph-arrow-square-out"></i></a>` : ''}
                             ${hasCaseStudy ? `<a href="${caseStudyLink}" class="text-[10px] font-bold uppercase tracking-[0.2em] text-center hover:text-accent transition-colors">Read Strategic Case Study</a>` : ''}
                         </div>
@@ -30,7 +30,7 @@ export class ProjectDetails extends BaseComponent {
                 </section>
 
                 <section class="max-w-7xl mx-auto px-4 md:px-6">
-                    <div class="bento-grid gap-4 auto-rows-auto md:auto-rows-[350px]">
+                    <div class="bento-grid gap-4 auto-rows-auto lg:auto-rows-[350px]">
                         ${images.map((img, index) => {
                             const sequencePos = index % 3;
                             let spanClass = "";

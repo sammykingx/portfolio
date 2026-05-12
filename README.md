@@ -165,3 +165,4 @@ Then visit `http://localhost:8000`.
 - The JavaScript modules initialize the mobile navigation menu and ambient UI motion.
 - AOS and GSAP work together to provide scroll reveal and background animation effects.
 - The current build config is optimized for Tailwind CSS production output.
+- Generate Favicon from [here](https://www.favicon-generator.org/)
