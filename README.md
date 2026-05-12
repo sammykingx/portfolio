@@ -1,53 +1,144 @@
 # Sammy Kingx Portfolio
 
-A modern personal portfolio website for Sammy Kingx built as a static front-end project with HTML, Tailwind CSS, and JavaScript.
+![Portfolio Banner](src/images/mockups/hero.png)
 
-## Overview
+## 🌟 Overview
 
-This repository contains the source for a professional landing page showcasing portfolio sections, systems, technology stack, and contact interactions.
+Welcome to the personal portfolio website of **Sammy Kingx**, a skilled developer and technology enthusiast. This repository houses a modern, responsive portfolio built with cutting-edge web technologies, showcasing projects, skills, and professional insights.
 
-Key features:
-- Responsive, glassmorphism-inspired layout
-- Tailwind CSS styling with a custom build pipeline
-- Mobile menu and anchor navigation
-- Animated hero and ambient background using GSAP and AOS
-- Accessible, static HTML deployment ready
+This is a static front-end project that serves as a digital showcase for Sammy's work in software development, featuring an elegant glassmorphism design, smooth animations, and an intuitive user experience.
 
-## Tech stack
+## ✨ Features
 
-- HTML5
-- Tailwind CSS v4
-- JavaScript (ES modules)
-- GSAP for motion effects
-- AOS for scroll animations
+- **Responsive Design**: Optimized for all devices with a mobile-first approach
+- **Glassmorphism UI**: Modern aesthetic with translucent elements and subtle shadows
+- **Interactive Animations**: Powered by GSAP and AOS for engaging user interactions
+- **Project Showcases**: Detailed case studies for featured projects like ScholarlyMe and Servio
+- **Contact Integration**: Seamless ways to connect and collaborate
+- **Accessibility Focused**: Built with semantic HTML and keyboard navigation support
+- **Performance Optimized**: Fast loading with efficient asset management
 
-## Development
+## 🛠️ Tech Stack
 
-Install dependencies:
+- **Frontend Framework**: HTML5, Tailwind CSS v4
+- **JavaScript**: ES6+ modules for component architecture
+- **Animation Libraries**:
+  - GSAP (GreenSock Animation Platform) for complex animations
+  - AOS (Animate On Scroll) for scroll-triggered effects
+- **Build Tools**: Custom Tailwind build pipeline with npm scripts
+- **Deployment**: Static hosting ready (Netlify, Vercel, or similar)
 
+## 📸 Screenshots
+
+### Design Philosophy
+![Design Philosophy](src/images/mockups/philiosphy.png)
+
+### Impact Visualization
+![Impact](src/images/mockups/impact.png)
+
+## 🚀 Development
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/sammykingx/portfolio.git
+cd portfolio
+```
+
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-Build the Tailwind CSS output:
+### Development Commands
 
+- **Build CSS**: Compile Tailwind styles
 ```bash
 npm run build:css
 ```
 
-Watch styles and rebuild on change:
-
+- **Development Mode**: Watch for changes and rebuild automatically
 ```bash
 npm run dev
 ```
 
-## Project structure
+- **Full Build**: Build for production
+```bash
+npm run build
+```
 
-- `index.html` — main page markup and SEO meta tags
-- `src/css/input.css` — Tailwind CSS entry file
-- `src/css/styles.css` — generated CSS output
-- `src/js/main.js` — app initialization and component wiring
-- `src/js/utils/navigation.js` — mobile menu and accessibility logic
+## 📁 Project Structure
+
+```
+portfolio/
+├── index.html                 # Main landing page
+├── package.json              # Dependencies and scripts
+├── README.md                 # This file
+├── articles/                 # Blog/article pages
+├── case-studies/            # Detailed project case studies
+│   ├── scholarlyme/         # ScholarlyMe project details
+│   └── servio/              # Servio project details
+├── projects/                 # Project overview pages
+├── src/
+│   ├── css/
+│   │   ├── input.css        # Tailwind entry point
+│   │   └── styles.css       # Compiled styles
+│   ├── images/
+│   │   ├── mockups/         # Design mockups and banners
+│   │   ├── personal/        # Personal/professional images
+│   │   ├── projects/        # Project screenshots
+│   │   └── partners/        # Partner/client logos
+│   └── js/
+│       ├── main.js          # Application entry point
+│       ├── app.js           # Core app logic
+│       ├── pageAnimations.js # Page-specific animations
+│       ├── components/      # Reusable UI components
+│       │   ├── baseComponents.js
+│       │   ├── homePage/    # Home page components
+│       │   ├── projects/    # Project-related components
+│       │   └── shared/      # Shared components (header, footer)
+│       └── utils/           # Utility functions
+│           ├── gsapAnimation.js
+│           └── navigation.js
+
+```
+
+## 🎯 Key Components
+
+- **Hero Section**: Animated introduction with call-to-action
+- **Services**: Overview of technical expertise and offerings
+- **Projects**: Interactive project cards with filtering
+- **Case Studies**: In-depth project documentation
+- **Contact**: Multiple ways to get in touch
+- **Navigation**: Smooth scrolling and mobile-responsive menu
+
+## 🤝 Contributing
+
+While this is a personal portfolio, contributions for improvements are welcome! Please:
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## 📄 License
+
+This project is private and proprietary. All rights reserved.
+
+## 📞 Contact
+
+- **Website**: [sammykingx.com.ng](https://sammykingx.com.ng)
+- **Email**: [hello@sammykingx.com.ng]
+- **LinkedIn**: [https://www.linkedin.com/in/iyebhora-samuel/]
+
+---
+
+*Built with ❤️ by Sammy Kingx*
 - `src/js/utils/gsap-animation.js` — GSAP animation orchestration
 - `src/images/` — visual assets used on the page
 
